@@ -3,3 +3,4 @@ adding 2nd line
 adding 3rd line
 adding 4th line
 adding 5th line
+df -h | awk '{if ($1 == "H:") {print $4}}' | cut -d '%' -f1
